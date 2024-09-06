@@ -7,5 +7,5 @@ class Restaurante:
         self.especialidade = especialidade
         self.cidade = cidade
 
-# Instanciando um restaurante e atribuindo valores aos seus atributos
-restaurante_praga = Restaurante(nome='Praga', categoria='Italiana', ativo=False, especialidade='Fettuccine', cidade='Asa Sul')
+# Instanciando um restaurante utilizando o construtor
+novo_restaurante = Restaurante(nome='Camilos', categoria='Brasileira')
