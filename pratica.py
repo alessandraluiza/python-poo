@@ -1,20 +1,24 @@
 class Musica:
-    nome = ''
-    estilo = ''
-    cantor = ''
+    musicas = []
+
+    def __init__(self, nome='', artista='', duracao=0):
+        self.nome = nome
+        self.artista = artista
+        self.duracao = duracao
+        Musica.musicas.append(self)
+
+    def __str__(self):
+        return f'{self.nome} | {self.artista}'
+    
+    def listar_musicas():
+        for musica in Musica.musicas:
+            print(f'{musica.nome} | {musica.artista} | {musica.duracao}')
 
 
-musica1 = Musica()
-musica1.nome = 'Beija-flor'
-musica1.estilo = 'Sertanejo'
-musica1.cantor = 'Victor e Vinicius'
+musica1 = Musica(nome='Beija-flor', artista='Victor e Vinicius', duracao=245)
 
-musica2 = Musica()
-musica2.nome = 'Estilado'
-musica2.estilo = 'Brega'
-musica2.cantor = 'Marcinho'
+musica2 = Musica(nome='Estilado', artista='Marcinho', duracao=326)
 
-musica3 = Musica()
-musica3.nome = 'Mulher ingrata'
-musica3.estilo = 'MPB'
-musica3.cantor = 'Roberto'
+musica3 = Musica(nome='Mulher ingrata', artista='Roberto', duracao=298)
+
+Musica.listar_musicas()
