@@ -1,4 +1,4 @@
-from pratica_banco import Banco
+from pratica.pratica_banco import Banco
 
 class Agencia(Banco):
     def __init__ (self, nome, endereco, numero):
