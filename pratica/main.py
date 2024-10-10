@@ -1,11 +1,9 @@
-from pratica import Livro
+from pratica_carro import Carro
 
-livro1 = Livro("Sei Que Foi Assim", "Lion Gos", 2014)
-livro2 = Livro("A Pequena Stel", "Robin Fackem", 2018)
-livro3 = Livro("Como Isso Aconteceu?", "Kate Will", 2020)
-livro4 = Livro("O Poder da Cura", "Roman Jonher", 2002)
+carro1 = Carro('Fiat', 'Mobi', 'Prata')
+carro2 = Carro('BYD', 'Dolphin', 'Preto')
+carro3 = Carro('Toyota', 'Corolla', 'Vermelho')
 
-print(livro1)
-print(livro2)
-print(livro3)
-print(livro4)
+print(f'Carro 1: {carro1.marca} {carro1.modelo}, Cor: {carro1.cor}')
+print(f'Carro 2: {carro2.marca} {carro2.modelo}, Cor: {carro2.cor}')
+print(f'Carro 3: {carro3.marca} {carro3.modelo}, Cor: {carro3.cor}')
